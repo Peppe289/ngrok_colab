@@ -17,7 +17,7 @@ if os.path.exists(file_path):
     os.remove(file_path)
 
 with open(file_path, "w") as file:
-    string = url.read().split()[1]
+    string = str(url).split()[1]
     string = string[1:len(string) - 1]
     file.write(str(string))
 
