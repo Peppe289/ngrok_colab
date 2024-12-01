@@ -11,7 +11,7 @@ ngrok.set_auth_token(args.token)
 
 url = ngrok.connect(8000)
 
-file_path = "ngrok_url.txt"
+file_path = "/content/ngrok_url.txt"
 
 if os.path.exists(file_path):
     os.remove(file_path)
@@ -22,5 +22,3 @@ with open(file_path, "w") as file:
     file.write(str(string))
 
 print("Public URL:", url)
-while True:
-    sleep(10000)
