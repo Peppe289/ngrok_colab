@@ -22,3 +22,5 @@ with open(file_path, "w") as file:
     file.write(str(string))
 
 print("Public URL:", url)
+while True:
+    sleep(10000)
